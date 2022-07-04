@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 
 public class GroupUtils {
 
-  public static List<String> getItemsFromUniqueGroup(Matcher m) {
+  public static List<String> getItemsByWholeGroup(Matcher m) {
     List<String> list = new ArrayList<String>();
     while (m.find()) {
       list.add(m.group());// without parameter
@@ -15,7 +15,7 @@ public class GroupUtils {
     return list;
   }
 
-  public static List<String> getItems(Matcher m) {
+  public static List<String> getItemsByGroups(Matcher m) {
     List<String> list = new ArrayList<String>();
     while (m.find()) {
       for (int i = 0; i < m.groupCount() + 1; i++) {

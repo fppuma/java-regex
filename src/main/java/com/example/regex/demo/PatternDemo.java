@@ -22,7 +22,7 @@ public class PatternDemo {
     // matcher(input string)
     Matcher m = p.matcher("There are 3 oranges and 2 apples in the table.");
 
-    List<String> items = GroupUtils.getItemsFromUniqueGroup(m);
+    List<String> items = GroupUtils.getItemsByWholeGroup(m);
     logger.info("items: {}", items); // items: [3, 2]
 
   }
