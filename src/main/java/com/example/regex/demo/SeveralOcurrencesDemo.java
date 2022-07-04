@@ -14,7 +14,7 @@ public class SeveralOcurrencesDemo {
 
   public static void main(String[] args) {
 
-    // slash followed by alfanumeric chars
+    // slash(\\/) followed by alfanumeric chars
     String regex = "\\/[a-z0-9]*";
     String input = "https://jsonplaceholder.typicode.com/posts/1/comments";
 
